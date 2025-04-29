@@ -1,15 +1,37 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# dependencies
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
 node_modules/
+bower_components/
+jspm_packages/
+web_modules/
 
-# Expo
-.expo/
+# Build output
+build/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# Expo
+.expo/
+
+# Native files
 *.orig.*
 *.jks
 *.p8
@@ -20,7 +42,7 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
-# debug
+# Debug
 npm-debug.*
 yarn-debug.*
 yarn-error.*
@@ -29,8 +51,53 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
+# Environment files
+.env
 .env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# typescript
+# TypeScript
 *.tsbuildinfo
+
+# Cache
+.cache
+.parcel-cache
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.nyc_output
+.grunt
+.fusebox/
+
+# Framework outputs
+.next
+out
+.nuxt
+.vuepress/dist
+.temp
+.cache/
+.docusaurus
+.serverless/
+.dynamodb/
+.vscode-test
+.tern-port
+
+# Yarn Integrity
+.yarn-integrity
+
+# Output of 'npm pack'
+*.tgz
+
+# Lockfiles
+.lock-wscript
