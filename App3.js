@@ -15,10 +15,10 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-   flexDirection: 'column',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: '600',
+    height: 600,
     marginTop: 150,
-  },
-  });
+  }
+});
